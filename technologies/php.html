@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web development technolgies</title>
+    <script
+        src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../scss/main.css">
+</head>
+<body class='ripple'>
+    <header>
+        <nav class="types__list">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" id="menuLabel">
+              <span class="cross">&#215;</span>
+              <span class='logo'>webdevelopment</span>
+              <span class="plus">&#43;</span>
+            </label>
+            <ul id="categories">
+              <li class="category html"><a href="html5.html"><span>HTML5</span></a></li>
+              <li class="category"><a href="#two"><span>Category 2</span></a></li>
+              <li class="category"><a href="#three"><span>Category 3</span></a></li>
+              <li class="category"><a href="#four"><span>Category 4</span></a></li>
+              <li class="category"><a href="#five"><span>Category 5</span></a></li>
+              <li class="category"><a href="#six"><span>Category 6</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main><section class='dev__rules'>
+        <article class="parent padding__width">
+            <blockquote>The margin and padding of a child element in percentage is the percentage of the width of its parent element.<span>Aayush Arora
+            </span></blockquote>
+            <div class="child padding__width">
+                <ul>
+                    <li><span>1.</span><p>Parent width = 250px</p></li>
+                    <li><span>2.</span><p>Child padding = 10%</p></li>
+                    <li><span>3.</span><p>padding of child = x% * (width of parent)</p></li>
+                    <li><span>4.</span><p>padding of child = 10% * 250px</p></li>
+                    <li><span>5.</span><p>25px</p></li>
+                </ul>
+            </div>
+        </article>
+        <article class="parent percentage__height">
+            <blockquote>The height of a child element in percentage is calculated by the height of the parent element.<span>Aayush Arora
+            </span></blockquote>
+            <div class="child percentage__height">
+                <ul>
+                    <li><span>1.</span><p>Parent height = 250px</p></li>
+                    <li><span>2.</span><p>Child height = 10%</p></li>
+                    <li><span>3.</span><p>Height of child = x% * ( height of the parent element )</p></li>
+                    <li><span>4.</span><p>Height of child = 10% * (250px)</p></li>
+                    <li><span>5.</span><p>25px</p></li>
+                </ul>
+            </div>
+        </article>
+    </section>
+</main>
+<script src='js/main.js'></script>
+    <script src='js/ripple.js'></script>
+</body>

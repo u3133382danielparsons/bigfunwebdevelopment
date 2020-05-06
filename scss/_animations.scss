@@ -1,0 +1,37 @@
+a, div {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    }
+    
+    .ripple .ripple-after {
+        background-color: rgba(0,0,0, 0.1);
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        display: block;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    
+    .animate {
+        -webkit-animation: ripple 1s linear;
+        animation: ripple 1s linear;
+    }
+    
+    @-webkit-keyframes ripple {
+        100% {
+            -webkit-transform: scale(5);
+            transform: scale(5);
+            background-color: transparent;
+        }
+    }
+    
+    @keyframes ripple {
+        100% {
+            -webkit-transform: scale(5);
+            transform: scale(5);
+            background-color: transparent;
+        }
+    }

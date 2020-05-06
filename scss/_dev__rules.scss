@@ -1,0 +1,39 @@
+article.dev__rules {
+    margin: 21px;
+    section {
+        
+        &.parent {
+            margin: 21px 21px 42px 21px;
+        }
+    }
+    .parent {
+        width: auto;
+        height: auto;
+        margin: 2px;
+        padding: 1px;
+        // border: 1px solid lightgray;
+        .child {
+            margin: 10%;
+            padding: 10%;
+            border: 1px dashed blue;
+            ul {
+                li {
+                    position: relative;
+                    margin-bottom: 34px;
+                    p {
+                        padding-left: 60px;
+                        color: #555;
+                        line-height: 1.5;
+                        padding-left: 55px;
+                        padding-top: 13px;
+                    }
+                    span {
+                        position: absolute;
+                        font-size: 34px;
+                        color: #ccc;
+                    }
+                }  
+            } 
+        }  
+    }
+}

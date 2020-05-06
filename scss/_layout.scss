@@ -1,0 +1,38 @@
+header {
+    nav.types-list {
+        display: block !important;
+        margin-bottom: 21px;
+        width: 100vw;
+        height: auto;
+        &.sticky-nav {
+          position: fixed;
+          z-index: 10;
+        }
+    }
+}
+main {
+    margin-top: 21px;
+    .container {  
+        max-width: 1335px;
+        margin: 0 auto;
+        .flex__row {
+            margin: 0 21px;
+            display: flex;
+            flex-flow: row wrap;
+            .flex__item { 
+                flex-grow: 1;  
+            }   
+        }
+    }
+}
+
+
+
+
+
+  
+
+
+  
+  
+  
