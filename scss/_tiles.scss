@@ -1,9 +1,11 @@
-article {
-    h2 {
+article.tiles {
+    h2, p {
         text-align: center;
-        padding: 8%;
-        letter-spacing: .1em;
-        
+        padding: 5% 0 0 0;
+        letter-spacing: .1em;  
+    }
+    p {
+        padding-bottom: 5%;
     }
 }
 ul.flex__row {
@@ -445,6 +447,147 @@ ul.flex__row {
             background-image: url(../../media/images/xamarin.svg);
             background-color: #fff;     
         }
+        &.tailwind {
+            background-image: url(../../media/images/tailwind.svg);
+            background-color: #fff;     
+        }
+        &.sketch {
+            background-image: url(../../media/images/sketch.svg);
+            background-color: #fff;     
+        }
+        &.figma {
+            background-image: url(../../media/images/figma.svg);
+            background-color: #fff;     
+        }
+        &.flask {
+            background-image: url(../../media/images/flask.svg);
+            background-color: #fff;     
+        }
+        &.semantic {
+            background-image: url(../../media/images/semantic.svg);
+            background-color: #fff;     
+        }
+        &.svelte {
+            background-image: url(../../media/images/svelte.svg);
+            background-color: #fff;     
+        }
+        &.postman {
+            background-image: url(../../media/images/postman.svg);
+            background-color: #212529;     
+        }
+        &.preact {
+            background-image: url(../../media/images/preact.svg);
+            background-color: #fff;     
+        }
+        &.perfecto {
+            background-image: url(../../media/images/perfecto.svg);
+            background-color: #fff;     
+        }
+        &.mojo {
+            background-image: url(../../media/images/mojo.png);
+            background-color: #fff;     
+        }
+        &.kitura {
+            background-image: url(../../media/images/kitura.svg);
+            background-color: #fff;     
+        }
+        &.vapor {
+            background-image: url(../../media/images/vapor.png);
+            background-color: #fff;     
+        }
+        &.blazor {
+            background-image: url(../../media/images/blazor.png);
+            background-color: #fff;     
+        }
+        &.popphp {
+            background-image: url(../../media/images/popphp.png);
+            background-color: #fff;     
+        }
+        &.padrino {
+            background-image: url(../../media/images/padrino.svg);
+            background-color: #fff;     
+        }
+        &.codeigniter {
+            background-image: url(../../media/images/codeigniter.png);
+            background-color: #fff;     
+        }
+        &.play {
+            background-image: url(../../media/images/play.svg);
+            background-color: rgb(146, 209, 61);;     
+        }
+        &.sinatra {
+            background-image: url(../../media/images/sinatra.png);
+            background-color: #fff;     
+        }
+        &.lando {
+            background-image: url(../../media/images/lando.png);
+            background-color: #ed3f7a;     
+        }
+        &.bit {
+            background-image: url(../../media/images/bit.svg);
+            background-color: #fff;     
+        }
+        &.wix {
+            background-image: url(../../media/images/wix.svg);
+            background-color: #fff;     
+        }
+        &.platform {
+            background-image: url(../../media/images/platform.svg);
+            background-color: #fff;     
+        }
+        &.ez {
+            background-image: url(../../media/images/ez.svg);
+            background-color: #fff;     
+        }
+       
+        &.acquia {
+            background-image: url(../../media/images/acquia.svg);
+            background-color: #fff;     
+        }
+        &.strapi {
+            background-image: url(../../media/images/strapi.svg);
+            background-color: #fff;     
+        }
+        &.docker {
+            background-image: url(../../media/images/docker.svg);
+            background-color: #fff;     
+        }
+        &.contenta {
+            background-image: url(../../media/images/contenta.png);
+            background-color: #fff;     
+        }
+        &.mobileangular {
+            background-image: url(../../media/images/mobileangular.png);
+            background-color: #fff;     
+        }
+        &.react_native {
+            background-image: url(../../media/images/react_native.png);
+            background-color: #fff;     
+        }
+        &.nativescript {
+            background-image: url(../../media/images/nativescript.png);
+            background-color: rgb(61, 90, 254);     
+        }
+        &.jquerymobile {
+            background-image: url(../../media/images/jquerymobile.svg);
+            background-color: #fff;     
+        }
+        &.animejs {
+            background-image: url(../../media/images/animejs.jpg);
+            background-color: #fff;     
+        }
+        &.motionui {
+            background-image: url(../../media/images/motionui.svg);
+            background-color: #fff;     
+        }
+        // &. {
+        //     background-image: url(../../media/images/.svg);
+        //     background-color: #fff;     
+        // }
+        // &. {
+        //     background-image: url(../../media/images/.svg);
+        //     background-color: #fff;     
+        // }
         // &. {
         //     background-image: url(../../media/images/.svg);
         //     background-color: #fff;     

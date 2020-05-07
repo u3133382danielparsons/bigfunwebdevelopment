@@ -24,6 +24,16 @@ main {
             }   
         }
     }
+    article.first__article {
+        h2, p {
+            text-align: center;
+            padding: 5% 0 0 0;
+            letter-spacing: .1em;  
+        }
+        p {
+            padding-bottom: 5%;
+        }
+    }
 }
 
 

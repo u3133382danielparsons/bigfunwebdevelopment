@@ -471,6 +471,139 @@ $('.html5').each(function() {
     var link = $(this).html();
     $(this).contents().wrap('<a href="https://dotnet.microsoft.com/apps/xamarin"  target="_blank"></a>');
   });
+  $('.tailwind').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://tailwindcss.com/"  target="_blank"></a>');
+  });
+  $('.sketch').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.sketch.com/"  target="_blank"></a>');
+  });
+  $('.figma').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.figma.com/"  target="_blank"></a>');
+  });
+  $('.flask').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://flask.palletsprojects.com/en/1.1.x/"  target="_blank"></a>');
+  });
+  $('.semantic').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://semantic-ui.com/"  target="_blank"></a>');
+  });
+  $('.svelte').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://svelte.dev/"  target="_blank"></a>');
+  });
+  $('.postman').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.postman.com/"  target="_blank"></a>');
+  });
+  $('.preact').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://preactjs.com/"  target="_blank"></a>');
+  });
+  $('.perfecto').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://perfect.org/"  target="_blank"></a>');
+  });
+  $('.mojo').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.mojolicious.org/"  target="_blank"></a>');
+  });
+  $('.kitura').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.kitura.io/"  target="_blank"></a>');
+  });
+  $('.vapor').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://vapor.codes/"  target="_blank"></a>');
+  });
+  $('.blazor').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor"  target="_blank"></a>');
+  });
+  $('.popphp').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.popphp.org/"  target="_blank"></a>');
+  });
+  $('.padrino').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="http://padrinorb.com/"  target="_blank"></a>');
+  });
+  $('.codeigniter').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://codeigniter.com/"  target="_blank"></a>');
+  });
+  $('.play').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.playframework.com/"  target="_blank"></a>');
+  });
+  $('.sinatra').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="http://sinatrarb.com/"  target="_blank"></a>');
+  });
+  $('.lando').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://lando.dev/"  target="_blank"></a>');
+  });
+  $('.bit').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://bitbucket.org/product"  target="_blank"></a>');
+  });
+  $('.wix').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.wix.com/"  target="_blank"></a>');
+  });
+  $('.platform').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://platform.sh/"  target="_blank"></a>');
+  });
+  $('.ez').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://platform.sh/stacks/ez/"  target="_blank"></a>');
+  });
+  
+  $('.acquia').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.acquia.com/"  target="_blank"></a>');
+  });
+  $('.strapi').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://strapi.io/"  target="_blank"></a>');
+  });
+  $('.docker').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.docker.com/"  target="_blank"></a>');
+  });
+  $('.contenta').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.contentacms.org/"  target="_blank"></a>');
+  });
+  $('.mobileangular').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="http://mobileangularui.com/"  target="_blank"></a>');
+  });
+  $('.react_native').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://reactnative.dev/"  target="_blank"></a>');
+  });
+  $('.nativescript').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.nativescript.org/"  target="_blank"></a>');
+  });
+  $('.jquerymobile').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://jquerymobile.com/"  target="_blank"></a>');
+  });
+  $('.animejs').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://animejs.com/"  target="_blank"></a>');
+  });
+  $('.motionui').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://zurb.com/playground/motion-ui"  target="_blank"></a>');
+  });
   // $('.').each(function() {
   //   var link = $(this).html();
   //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
@@ -507,8 +640,15 @@ $('.html5').each(function() {
   //   var link = $(this).html();
   //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
   // });
-
-
-  let flex_items = document.getElementsByClassName('flex__item');
-let flex_items_length = flex_items.length;
-console.log(' 84 flex_items = ' + flex_items.length);
+  // $('.').each(function() {
+  //   var link = $(this).html();
+  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
+  // });
+  // $('.').each(function() {
+  //   var link = $(this).html();
+  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
+  // });
+  // $('.').each(function() {
+  //   var link = $(this).html();
+  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
+  // });

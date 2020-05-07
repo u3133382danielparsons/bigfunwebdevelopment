@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big fun web development - css3</title>
+    <script
+        src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../dist/css/main.css">
+</head>
+<body class='ripple'>
+    <header>
+        <nav class="types__list">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" id="menuLabel">
+              <span class="cross">&#215;</span>
+              <span class='logo'><a href="../index.html">bigfunwebdevelopment</a></span>
+              <span class="plus">&#43;</span>
+            </label>
+            <ul id="categories">
+                <li class="category html"><a href="../index.html"><span>bigfunwebdevelopment</span></a></li>
+              <li class="category html"><a href="./hypertext.html"><span>Hyper Text Markup Language 5</span></a></li>
+              <li class="category"><a href="./javascript.html"><span>Javascript</span></a></li>
+              <li class="category"><a href="./categories/preprocessor.html"><span>PHP</span></a></li>
+              <li class="category"><a href="./categories/frontend.html"><span>Front-end Frameworks</span></a></li>
+              <li class="category"><a href="./categories/backend.html"><span>Back-end Frameworks</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class='first__article'>
+            <h2>CSS3</h2>
+            <p>CSS3 is used to style the layout of a webpage.</p>
+        </article>
+        <article class='dev__rules'>
+            <section class="parent">
+                <blockquote>CSS specifies the style of a webpage — page layouts, colors, and fonts are all determined with CSS.<span><a href="https://skillcrush.com/blog/css/">Scott Morris</a>
+                </span></blockquote>
+                <div class="child padding__width">
+                    <ul>
+                        <li>
+                            <span>1.</span>
+                            <p>Define a selector</p>
+                        </li>
+                        <li>
+                            <span>2.</span>
+                            <p>Append both an opening and closing curly brace.</p>
+                        </li>
+                        <li>
+                            <span>3.</span>
+                            <p>Inside the selections curly braces a declaration is made with properties and values</p>
+                        </li>
+                        <li>
+                            <span>4.</span>
+                            <p>Each declaration made inside a selector can contain more than one property and value.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="parent">
+                <div class="child cascading__indents">
+                    <ul>
+                        <li><span>1.</span>
+                            <p>
+                                <code>body</code>
+                            </p>
+                        </li>
+                        <li>
+                            <span>2.</span>
+                            <p><code>body {}</code>
+                            </p>
+                        </li>
+                        <li><span>3.</span>
+                            <p class="third">
+                                <code>body {<br>
+                                    <span class="first">background-color: blue;</span>
+                                    <br><span class="second">}</span>
+                                </code>
+                            </p>
+                        </li>
+                        <li>
+                            <span>4.</span>
+                            <p class="fourth">
+                                <code>body {<br>
+                                    <span>background-color: blue;</span><br>
+                                    <span>border-size: 5px;</span><br>
+                                    <span>border-style: solid;</span><br> 
+                                    <span>border-color: red;</span><br>
+                                    <span class="second">}</span>
+                                </code>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>       
+    </main>
+    <script src='../js/navbar.js'></script>
+    <script src='../js/ripple.js'></script>
+</body>

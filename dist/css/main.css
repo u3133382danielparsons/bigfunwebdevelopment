@@ -55,6 +55,16 @@ main .container .flex__row .flex__item {
   flex-grow: 1;
 }
 
+main article.first__article h2, main article.first__article p {
+  text-align: center;
+  padding: 5% 0 0 0;
+  letter-spacing: .1em;
+}
+
+main article.first__article p {
+  padding-bottom: 5%;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -133,10 +143,9 @@ nav.types__list label span:first-of-type {
 }
 
 nav.types__list label span:nth-last-of-type(odd) {
-  line-height: .75;
+  line-height: 0.69;
   transition: all 1000ms ease-in-out;
   background: rgba(0, 226, 226, 0.2);
-  outline: 2px solid white;
   outline-offset: 8px;
   height: 64px;
   width: 64px;
@@ -145,8 +154,6 @@ nav.types__list label span:nth-last-of-type(odd) {
   margin-bottom: 121px;
   display: inline-flex;
   justify-content: center;
-  padding: 0 5px 5px 5px;
-  border: 1px solid white;
   font-weight: 900;
   border-radius: 50%;
 }
@@ -155,6 +162,8 @@ nav.types__list label span:nth-last-of-type(odd):hover {
   color: #cccccc;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
   opacity: .5;
+  outline: 2px solid white;
+  border: 1px solid white;
 }
 
 nav.types__list label span:hover {
@@ -372,10 +381,14 @@ nav.types__list.list-clicked.even input:checked + label.label_active span:last-c
   display: none;
 }
 
-article h2 {
+article.tiles h2, article.tiles p {
   text-align: center;
-  padding: 8%;
+  padding: 5% 0 0 0;
   letter-spacing: .1em;
+}
+
+article.tiles p {
+  padding-bottom: 5%;
 }
 
 ul.flex__row li.flex__item {
@@ -909,6 +922,171 @@ ul.flex__row li.flex__item.xamarin {
   background-color: #fff;
 }
 
+ul.flex__row li.flex__item.tailwind {
+  background-image: url(../../media/images/tailwind.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.sketch {
+  background-image: url(../../media/images/sketch.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.figma {
+  background-image: url(../../media/images/figma.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.flask {
+  background-image: url(../../media/images/flask.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.semantic {
+  background-image: url(../../media/images/semantic.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.svelte {
+  background-image: url(../../media/images/svelte.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.postman {
+  background-image: url(../../media/images/postman.svg);
+  background-color: #212529;
+}
+
+ul.flex__row li.flex__item.preact {
+  background-image: url(../../media/images/preact.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.perfecto {
+  background-image: url(../../media/images/perfecto.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.mojo {
+  background-image: url(../../media/images/mojo.png);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.kitura {
+  background-image: url(../../media/images/kitura.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.vapor {
+  background-image: url(../../media/images/vapor.png);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.blazor {
+  background-image: url(../../media/images/blazor.png);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.popphp {
+  background-image: url(../../media/images/popphp.png);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.padrino {
+  background-image: url(../../media/images/padrino.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.codeigniter {
+  background-image: url(../../media/images/codeigniter.png);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.play {
+  background-image: url(../../media/images/play.svg);
+  background-color: #92d13d;
+}
+
+ul.flex__row li.flex__item.sinatra {
+  background-image: url(../../media/images/sinatra.png);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.lando {
+  background-image: url(../../media/images/lando.png);
+  background-color: #ed3f7a;
+}
+
+ul.flex__row li.flex__item.bit {
+  background-image: url(../../media/images/bit.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.wix {
+  background-image: url(../../media/images/wix.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.platform {
+  background-image: url(../../media/images/platform.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.ez {
+  background-image: url(../../media/images/ez.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.acquia {
+  background-image: url(../../media/images/acquia.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.strapi {
+  background-image: url(../../media/images/strapi.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.docker {
+  background-image: url(../../media/images/docker.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.contenta {
+  background-image: url(../../media/images/contenta.png);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.mobileangular {
+  background-image: url(../../media/images/mobileangular.png);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.react_native {
+  background-image: url(../../media/images/react_native.png);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.nativescript {
+  background-image: url(../../media/images/nativescript.png);
+  background-color: #3d5afe;
+}
+
+ul.flex__row li.flex__item.jquerymobile {
+  background-image: url(../../media/images/jquerymobile.svg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.animejs {
+  background-image: url(../../media/images/animejs.jpg);
+  background-color: #fff;
+}
+
+ul.flex__row li.flex__item.motionui {
+  background-image: url(../../media/images/motionui.svg);
+  background-color: #fff;
+}
+
 a, div {
   cursor: pointer;
   text-decoration: none;
@@ -940,6 +1118,16 @@ article.dev__rules {
   margin: 21px;
 }
 
+article.dev__rules a:hover {
+  text-decoration: underline;
+}
+
+article.dev__rules section p {
+  text-align: center;
+  margin-top: 13%;
+  margin-bottom: -5%;
+}
+
 article.dev__rules section.parent {
   margin: 21px 21px 42px 21px;
 }
@@ -951,10 +1139,58 @@ article.dev__rules .parent {
   padding: 1px;
 }
 
+article.dev__rules .parent div {
+  cursor: default;
+}
+
 article.dev__rules .parent .child {
   margin: 10%;
   padding: 10%;
-  border: 1px dashed blue;
+  border: 1px solid #78C0A8;
+}
+
+article.dev__rules .parent .child.left-align {
+  margin-top: -8%;
+}
+
+article.dev__rules .parent .child.left-align p {
+  text-align: left;
+}
+
+article.dev__rules .parent .child.hyper__indents p.third span.first {
+  bottom: 16px;
+  left: 78px;
+}
+
+article.dev__rules .parent .child.hyper__indents p.fourth span.first {
+  bottom: -13px;
+  left: 78px;
+}
+
+article.dev__rules .parent .child.hyper__indents p.fourth span.second {
+  bottom: -63px;
+  left: 78px;
+}
+
+article.dev__rules .parent .child.hyper__indents p.fourth span.third {
+  bottom: -89px;
+}
+
+article.dev__rules .parent .child.hyper__indents p span {
+  font-size: 1em;
+}
+
+article.dev__rules .parent .child.cascading__indents p.third span.second, article.dev__rules .parent .child.cascading__indents p.fourth span.second {
+  left: 406px;
+}
+
+article.dev__rules .parent .child.cascading__indents span {
+  font-size: 1em;
+}
+
+article.dev__rules .parent .child ul {
+  position: relative;
+  top: -55px;
 }
 
 article.dev__rules .parent .child ul li {
@@ -964,7 +1200,6 @@ article.dev__rules .parent .child ul li {
 
 article.dev__rules .parent .child ul li p {
   padding-left: 60px;
-  color: #555;
   line-height: 1.5;
   padding-left: 55px;
   padding-top: 13px;
@@ -973,6 +1208,9 @@ article.dev__rules .parent .child ul li p {
 article.dev__rules .parent .child ul li span {
   position: absolute;
   font-size: 34px;
-  color: #ccc;
+}
+
+article.dev__rules .parent .child ul.hyper__ul__two {
+  padding-bottom: 55px;
 }
 /*# sourceMappingURL=main.css.map */

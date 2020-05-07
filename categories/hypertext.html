@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>big fun web development - HTML5</title>
+    <script
+        src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../dist/css/main.css">
+</head>
+<body class='ripple'>
+    <header>
+        <nav class="types__list">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" id="menuLabel">
+              <span class="cross">&#215;</span>
+              <span class='logo'><a href="../index.html">bigfunwebdevelopment</a></span>
+              <span class="plus">&#43;</span>
+            </label>
+            <ul id="categories">
+              <li class="category html"><a href="../index.html"><span>bigfunwebdevelopment</span></a></li>
+              <li class="category"><a href="./cascading.html"><span>Cascading Style Sheets 3</span></a></li>
+              <li class="category"><a href="./javascript.html"><span>Javascript</span></a></li>
+              <li class="category"><a href="./preprocessor.html"><span>PHP</span></a></li>
+              <li class="category"><a href="./categories/frontend.html"><span>Front-end Frameworks</span></a></li>
+              <li class="category"><a href="./categories/backend.html"><span>Back-end Frameworks</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class='first__article'>
+            <h2>HTML5</h2>
+            <p>HTML5 is used to structure the content of a webpage.</p>
+        </article>
+        <article class='dev__rules'>
+            <section class="parent padding__width">
+                <blockquote>HTML5 is the latest version of Hypertext Markup Language, the code that describes web pages.<span><a href="https://www.techradar.com/au/news/internet/web/html5-what-is-it-1047393">Carrie Marshall </a>
+                </span></blockquote>
+                <p>Every html5 document contains a doctype with html tags, head tags, and body tags.</p>
+                <div class="child center-align">
+                    <ul>
+                        <li><span>1.</span><p>First declare a doctype</p></li>
+                        <li><span>2.</span><p>Underneath the doctype add both the html opening and closing tags.</p></li>
+                        <li><span>3.</span><p>Inside the html tags add both the opening and closing head tags.</p></li>
+                        <li><span>4.</span><p>Still inside the html tags, underneath the closing head tag, add both the opening and closing body tags.</p></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="parent percentage__height">
+                <!-- <blockquote>The height of a child element in percentage is calculated by the height of the parent element.<span>Aayush Arora
+                </span></blockquote> -->
+                <div class="child hyper__indents hypertext">
+                    <ul class='hyper__ul__two'>
+                        <li><span>1.</span>
+                            <p>
+                                <code>&lt;!DOCTYPE html&gt;</code>
+                            </p>
+                        </li>
+                        <li>
+                            <span>2.</span>
+                            <p>
+                                <code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;&#47;html&gt;</code>
+                            </p>
+                        </li>
+                        <li>
+                            <span>3.</span>
+                            <p class="third">
+                                <code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+                                    <span class="first">&lt;head&gt;<br>&lt;&#47;head&gt;</span>
+                                    <br>
+                                    &lt;&#47;html&gt;
+                                </code>
+                            </p>
+                        </li>
+                        <li>
+                            <span>4.</span>
+                            <p class='fourth'>
+                                <code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;
+                                    <br>
+                                    <span class="first">&lt;head&gt;<br>&lt;&#47;head&gt;</span>
+                                    <br>
+                                    <span class="second">&lt;body&gt;<br>&lt;&#47;body&gt;</span>
+                                    <span class='third'><br>&lt;&#47;html&gt;</span>
+                                </code>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+    
+    <script src='../js/navbar.js'></script>
+    <script src='../js/ripple.js'></script>
+</body>
