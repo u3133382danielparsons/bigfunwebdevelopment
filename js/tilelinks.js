@@ -604,51 +604,195 @@ $('.html5').each(function() {
     var link = $(this).html();
     $(this).contents().wrap('<a href="https://zurb.com/playground/motion-ui"  target="_blank"></a>');
   });
-  // $('.').each(function() {
-  //   var link = $(this).html();
-  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
-  // });
-  // $('.').each(function() {
-  //   var link = $(this).html();
-  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
-  // });
-  // $('.').each(function() {
-  //   var link = $(this).html();
-  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
-  // });
-  // $('.').each(function() {
-  //   var link = $(this).html();
-  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
-  // });
-  // $('.').each(function() {
-  //   var link = $(this).html();
-  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
-  // });
-  // $('.').each(function() {
-  //   var link = $(this).html();
-  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
-  // });
-  // $('.').each(function() {
-  //   var link = $(this).html();
-  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
-  // });
-  // $('.').each(function() {
-  //   var link = $(this).html();
-  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
-  // });
-  // $('.').each(function() {
-  //   var link = $(this).html();
-  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
-  // });
-  // $('.').each(function() {
-  //   var link = $(this).html();
-  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
-  // });
-  // $('.').each(function() {
-  //   var link = $(this).html();
-  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
-  // });
-  // $('.').each(function() {
-  //   var link = $(this).html();
-  //   $(this).contents().wrap('<a href=""  target="_blank"></a>');
-  // });
+  $('.csstricks').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://css-tricks.com/"  target="_blank"></a>');
+  });
+  $('.webpack').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://webpack.github.io/"  target="_blank"></a>');
+  });
+  $('.gruntjs').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://gruntjs.com/"  target="_blank"></a>');
+  });
+  $('.less').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="http://lesscss.org/"  target="_blank"></a>');
+  });
+  $('.handlebars').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://handlebarsjs.com/"  target="_blank"></a>');
+  });
+  $('.jade').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="http://jade-lang.com/"  target="_blank"></a>');
+  });
+  $('.jshint').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://jshint.com/"  target="_blank"></a>');
+  });
+  $('.require').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://requirejs.org/"  target="_blank"></a>');
+  });
+  $('.stylus').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://stylus-lang.com/"  target="_blank"></a>');
+  });
+  $('.modernizr').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://modernizr.com/"  target="_blank"></a>');
+  });
+  $('.brew').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://brew.sh/"  target="_blank"></a>');
+  });
+  $('.stencil').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://stenciljs.com/"  target="_blank"></a>');
+  });
+  $('.algolia').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://community.algolia.com/places/"  target="_blank"></a>');
+  });
+  $('.aos').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://michalsnik.github.io/aos/"  target="_blank"></a>');
+  });
+  $('.bideo').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://rishabhp.github.io/bideo.js/"  target="_blank"></a>');
+  });
+  $('.chart').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.chartjs.org/"  target="_blank"></a>');
+  });
+  $('.glimmer').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://glimmerjs.com/"  target="_blank"></a>');
+  });
+  $('.cleave').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://nosir.github.io/cleave.js/"  target="_blank"></a>');
+  });
+  $('.choreographer').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://christinecha.github.io/choreographer-js/"  target="_blank"></a>');
+  });
+  $('.granim').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://sarcadass.github.io/granim.js/"  target="_blank"></a>');
+  });
+  $('.multiple').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://multiple.js.org/"  target="_blank"></a>');
+  });
+  $('.omni').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://omniscientjs.github.io/"  target="_blank"></a>');
+  });
+  $('.parsley').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="http://parsleyjs.org/"  target="_blank"></a>');
+  });
+  $('.popper').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://popper.js.org/"  target="_blank"></a>');
+  });
+  $('.premonish').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://mathisonian.github.io/premonish/"  target="_blank"></a>');
+  });
+  $('.slick').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://kenwheeler.github.io/slick/"  target="_blank"></a>');
+  });
+  $('.taffy').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="http://taffydb.com/"  target="_blank"></a>');
+  });
+  $('.tween').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.createjs.com/tweenjs"  target="_blank"></a>');
+  });
+  $('.three').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://threejs.org/"  target="_blank"></a>');
+  });
+  $('.voca').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://vocajs.com/"  target="_blank"></a>');
+  });
+  $('.mocha').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://mochajs.org/"  target="_blank"></a>');
+  });
+  $('.babel').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://babeljs.io/"  target="_blank"></a>');
+  });
+  $('.shave').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://dollarshaveclub.github.io/shave/"  target="_blank"></a>');
+  });
+  $('.eslint').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://eslint.org/"  target="_blank"></a>');
+  });
+  $('.webix').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://webix.com/"  target="_blank"></a>');
+  });
+   $('.pure').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://purecss.io/"  target="_blank"></a>');
+  });
+  $('.uikit').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://getuikit.com/"  target="_blank"></a>');
+  });
+  $('.milligram').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://milligram.io/"  target="_blank"></a>');
+  });
+  $('.tent').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://css.sitetent.com/"  target="_blank"></a>');
+  });
+  $('.susy').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.oddbird.net/susy/"  target="_blank"></a>');
+  });
+  $('.base').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://getbase.org/"  target="_blank"></a>');
+  });
+  $('.spectre').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://picturepan2.github.io/spectre/"  target="_blank"></a>');
+  });
+  $('.picnic').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://picnicss.com/"  target="_blank"></a>');
+  });
+  $('.skeleton').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="http://getskeleton.com/"  target="_blank"></a>');
+  });
+  $('.animatecss').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://daneden.github.io/animate.css/"  target="_blank"></a>');
+  });
+  $('.paper').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://www.getpapercss.com/"  target="_blank"></a>');
+  });
+  $('.nes').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="https://nostalgic-css.github.io/NES.css/"  target="_blank"></a>');
+  });
+  $('.simple').each(function() {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="http://simplegrid.io/"  target="_blank"></a>');
+  });

@@ -41,439 +41,871 @@ ul.flex__row {
             
         }
         &:hover {
-            @include box_shadow(3);
-            -webkit-transform: translateY(-5px);
-            -moz-transform: translateY(-5px);
-            transform: translateY(-5px);
+            @include box_shadow(5);
+            // opacity: 0.5;
             cursor: pointer;
         }
+
         &.html5 {
             background-color: #E44D26;
-            background-image: url(../../media/images/html.svg);    
+            background-image: url(../../media/images/html.svg); 
+            &.animate_when_top {
+                animation: slide-in-top 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              } 
+              &.inViewport {
+                animation: heartbeat 5.5s ease-in-out both;
+            }
         }
         &.css3 {
             background-image: url(../../media/images/css.svg);
             background-color: #264de4;
-            
+            &.animate_when_top {
+                animation: slide-in-top 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              } 
+              &.inViewport {
+                animation: swirl-out-bck 6s ease-in both;
+            }   
         }
         &.js {
             background-image: url(../../media/images/js.svg);
             background-color: #F4DC42;
-            
+            &.animate_when_top {
+                animation: slide-in-top 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              }
+              &.inViewport {
+                animation: puff-out-center 5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+                
+            }
+              
         }
         &.ts {
             background-image: url(../../media/images/ts.svg);
             background-color: #007acc;
+            &.animate_when_top {
+                animation: slide-in-top 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              }
+              &.inViewport {
+                animation: fade-out 4s ease-out both;
+            }
         }
         &.jquery {
             background-color: #0769ad;
-            
             background-image: url(../../media/images/jquery.svg);
+            &.animate_when_top {
+                animation: slide-in-top 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+            &.inViewport {
+                animation: vibrate-1 5.3s linear both;
+            }
         }
         &.php {
             background-color: #474A8A;
-            
             background-image: url(../../media/images/php.svg);
+            &.animate_when_top {
+                animation: slide-in-top 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+            &.inViewport {
+                animation: pulsate-bck 5s ease-in-out both;
+            }
         }
         &.sass {
             background-image: url(../../media/images/sass.svg);
-            background-color: #032453;   
+            background-color: #032453; 
+            &.animate_when_top {
+                animation: slide-in-top 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            } 
+            &.inViewport {
+                animation: shake-vertical 4.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            } 
         }
         &.wordpress {
             background-image: url(../../media/images/wordpress.svg);
-            background-color: #00749c;      
+            background-color: #00749c; 
+            &.animate_when_top {
+                animation: slide-in-top 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            } 
+            &.inViewport {
+                animation: jello-vertical 4.9s both;   
+            }   
         }
         &.drupal {
             background-image: url(../../media/images/drupal.svg);
-            background-color: #53B0EB;      
+            background-color: #53B0EB;  
+            &.animate_when_top {
+                animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            }
+            &.inViewport {
+                animation: wobble-hor-top 4.8s both;
+            }
         }
         &.react {
             background-image: url(../../media/images/react.svg);
-            background-color: #fff;      
-        }
-        &.angular {
-            background-image: url(../../media/images/angular.svg);
-            background-color: #000;       
-        }
-        &.vue {
-            background-image: url(../../media/images/vue.svg);
-            background-color: #fff;       
-        }
-        &.node {
-            background-image: url(../../media/images/node.svg);
-            background-color: #fff;       
-        }
-        &.python {
-            background-image: url(../../media/images/python.svg);
-            background-color: #646464;       
-        }
-        &.csharp {
-            background-image: url(../../media/images/csharp.svg);
-            background-color: #11100F;       
-        }
-        &.cplus {
-            background-image: url(../../media/images/cplus.svg);
-            background-color: #D74654;     
-        }
-        &.java {
-            background-image: url(../../media/images/java.svg);
-            background-color: #000;     
-        }
-        &.apple {
-            background-image: url(../../media/images/apple.svg);
-            background-color: #555555;     
-        }
-        &.windows {
-            background-image: url(../../media/images/windows.svg);
-            background-color: #000;     
-        }
-        &.linux {
-            background-image: url(../../media/images/linux.svg);
-            background-color: #fff;     
-        }
-        &.vs {
-            background-image: url(../../media/images/vs.svg);
-            background-color: #000;     
-        }
-        &.sublime {
-            background-image: url(../../media/images/sublime.svg);
-            background-color: #4C4C4C;     
-        }
-        &.sql {
-            background-image: url(../../media/images/sql.svg);
-            background-color: #00758F;     
-        }
-        &.mysql {
-            background-image: url(../../media/images/mysql.svg);
-            background-color: #F29111;     
-        }
-        &.postsql {
-            background-image: url(../../media/images/postsql.svg);
-            background-color: #336791;     
-        }
-        &.mongo {
-            background-image: url(../../media/images/mongo.svg);
-            background-color: #E8E7D5;     
-        }
-        &.graphql {
-            background-image: url(../../media/images/graphql.svg);
-            background-color: #161e26;     
-        }
-        &.gatsby {
-            background-image: url(../../media/images/gatsby.svg);
-            background-color: #fff;     
-        }
-        &.next {
-            background-image: url(../../media/images/next.svg);
-            background-color: #fff;     
-        }
-        &.svg {
-            background-image: url(../../media/images/svg.svg);
-            background-color: #303030;     
-        }
-        &.chrome {
-            background-image: url(../../media/images/chrome.svg);
-            background-color: #4285F4;     
-        }
-        &.safari {
-            background-image: url(../../media/images/safari.svg);
-            background-color: #CC1111;     
-        }
-        &.firefox {
-            background-image: url(../../media/images/firefox.svg);
-            background-color: #203FB6;     
-        }
-        &.nightly {
-            background-image: url(../../media/images/nightly.svg);
-            background-color: #F62336;     
-        }
-        &.edge {
-            background-image: url(../../media/images/edge.svg);
-            background-color: #000;     
-        }
-        &.adobe {
-            background-image: url(../../media/images/adobe.svg);
-            background-color: #fff;     
-        }
-        &.xd {
-            background-image: url(../../media/images/xd.svg);
-            background-color: #fff;     
-        }
-        &.ps {
-            background-image: url(../../media/images/ps.svg);
-            background-color: #fff;     
-        }
-        &.ai {
-            background-image: url(../../media/images/ai.svg);
-            background-color: #fff;     
-        }
-        &.cc {
-            background-image: url(../../media/images/cc.svg);
-            background-color: #fff;     
-        }
-        &.git {
-            background-image: url(../../media/images/git.svg);
-            background-color: #fff;     
-        }
-        &.firebase {
-            background-image: url(../../media/images/firebase.svg);
-            background-color: #fff;     
-        }
-        &.ruby {
-            background-image: url(../../media/images/ruby.svg);
-            background-color: #fff;     
-        }
-        &.rails {
-            background-image: url(../../media/images/rails.svg);
-            background-color: #fff;     
-        }
-        &.cpanel {
-            background-image: url(../../media/images/cpanel.svg);
-            background-color: #fff;     
-        }
-        &.fz {
-            background-image: url(../../media/images/fz.svg);
-            background-color: #fff;     
-        }
-        &.netlify {
-            background-image: url(../../media/images/netlify.svg);
-            background-color: #fff;     
-        }
-        &.bootstrap {
-            background-image: url(../../media/images/bootstrap.svg);
-            background-color: #fff;     
-        }
-        &.material {
-            background-image: url(../../media/images/material.svg);
-            background-color: #fff;     
-        }
-        &.azure {
-            background-image: url(../../media/images/azure.svg);
-            background-color: #fff;     
-        }
-        &.yii {
-            background-image: url(../../media/images/yii.svg);
-            background-color: #fff;     
-        }
-        &.meteor {
-            background-image: url(../../media/images/meteor.svg);
-            background-color: #fff;     
-        }
-        &.express {
-            background-image: url(../../media/images/express.svg);
-            background-color: #fff;     
-        }
-        &.django {
-            background-image: url(../../media/images/django.svg);
-            background-color: #fff;     
-        }
-        &.laravel {
-            background-image: url(../../media/images/laravel.svg);
-            background-color: #fff;     
-        }
-        &.coffee {
-            background-image: url(../../media/images/coffee.svg);
-            background-color: #fff;     
-        }
-        &.go {
-            background-image: url(../../media/images/go.svg);
-            background-color: #fff;     
-        }
-        &.elixir {
-            background-image: url(../../media/images/elixir.svg);
-            background-color: #fff;     
-        }
-        &.scala {
-            background-image: url(../../media/images/scala.svg);
-            background-color: #fff;     
-        }
-        &.bulma {
-            background-image: url(../../media/images/bulma.svg);
-            background-color: #fff;     
-        }
-        &.d3 {
-            background-image: url(../../media/images/d3.svg);
-            background-color: #fff;     
-        }
-        &.w3c {
-            background-image: url(../../media/images/w3c.svg);
-            background-color: #fff;     
-        }
-        &.json {
-            background-image: url(../../media/images/json.svg);
-            background-color: #fff;     
-        }
-        &.objc {
-            background-image: url(../../media/images/objc.svg);
-            background-color: #fff;     
-        }
-        &.swift {
-            background-image: url(../../media/images/swift.svg);
-            background-color: #fff;     
-        }
-        &.ionic {
-            background-image: url(../../media/images/ionic.svg);
-            background-color: #fff;     
-        }
-        &.zurb {
-            background-image: url(../../media/images/zurb.svg);
-            background-color: #fff;     
-        }
-        &.net {
-            background-image: url(../../media/images/net.svg);
-            background-color: #fff;     
-        }
-        &.ember {
-            background-image: url(../../media/images/ember.svg);
-            background-color: #fff;     
-        }
-        &.backbone {
-            background-image: url(../../media/images/backbone.svg);
-            background-color: #fff;     
-        }
-        &.materialize {
-            background-image: url(../../media/images/materialize.svg);
-            background-color: #fff;     
-        }
-        &.phonegap {
-            background-image: url(../../media/images/phonegap.svg);
-            background-color: #fff;     
-        }
-        &.aurelia {
-            background-image: url(../../media/images/aurelia.svg);
-            background-color: #fff;     
-        }
-        &.aspnet {
-            background-image: url(../../media/images/aspnet.svg);
-            background-color: #fff;     
-        }
-        &.babylon {
-            background-image: url(../../media/images/babylon.svg);
-            background-color: #fff;     
-        }
-        &.mithril {
-            background-image: url(../../media/images/mithril.svg);
-            background-color: #fff;     
-        }
-        &.polymer {
-            background-image: url(../../media/images/polymer.svg);
-            background-color: #fff;     
-        }
-        &.oracle {
-            background-image: url(../../media/images/oracle.svg);
-            background-color: #fff;     
-        }
-        &.redis {
-            background-image: url(../../media/images/redis.svg);
-            background-color: #fff;     
-        }
-        &.amazon {
-            background-image: url(../../media/images/amazon.svg);
-            background-color: #fff;     
-        }
-        &.google {
-            background-image: url(../../media/images/google.svg);
-            background-color: #fff;     
-        }
-        &.stack {
-            background-image: url(../../media/images/stack.svg);
-            background-color: #fff;     
-        }
-        &.slack {
-            background-image: url(../../media/images/slack.svg);
-            background-color: #fff;     
-        }
-        &.mdn {
-            background-image: url(../../media/images/mdn.svg);
-            background-color: #fff;     
-        }
-        &.xml {
-            background-image: url(../../media/images/xml.svg);
-            background-color: #fff;     
-        }
-        &.medium {
-            background-image: url(../../media/images/medium.svg);
-            background-color: #000;     
-        }
-        &.smashing {
-            background-image: url(../../media/images/smashing.svg);
-            background-color: #fff;     
-        }
-        &.udemy {
-            background-image: url(../../media/images/udemy.svg);
-            background-color: #fff;     
-        }
-        &.zepto {
-            background-image: url(../../media/images/zepto.png);
-            background-color: #fff;     
-        }
-        &.apache {
-            background-image: url(../../media/images/apache.svg);
-            background-color: #fff;     
-        }
-        &.nginx {
-            background-image: url(../../media/images/nginx.svg);
-            background-color: #fff;     
+            background-color: #fff; 
+            &.animate_when_top {
+                animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            } animation: bounce-bottom 0.9s both; 
+            &.inViewport {
+                animation: bounce-bottom 4.9s both;
+            }       
         }
         &.redux {
             background-image: url(../../media/images/redux.svg);
-            background-color: #fff;     
+            background-color: #fff; 
+            &.animate_when_top {
+                animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            }
+            &.inViewport {
+                animation: ping 0.8s ease-in-out 6 both;
+            }     
+        }
+        &.angular {
+            background-image: url(../../media/images/angular.svg);
+            background-color: #000; 
+            &.animate_when_top {
+                animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            } 
+            &.inViewport {
+                animation: bounce-left 5s both;
+            }    
+        }
+        &.vue {
+            background-image: url(../../media/images/vue.svg);
+            background-color: #fff;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // }
+              &.inViewport {
+                animation: slit-in-vertical 4.5s ease-out both;
+              }        
+        }
+        &.node {
+            background-image: url(../../media/images/node.svg);
+            background-color: #fff; 
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // }  
+            &.inViewport {
+                animation: swirl-out-bck 6s ease-in both;
+            }    
+        }
+        &.python {
+            background-image: url(../../media/images/python.svg);
+            background-color: #646464; 
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+            &.inViewport {
+                animation: slide-rotate-hor-top 5.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }  
+        }
+        &.csharp {
+            background-image: url(../../media/images/csharp.svg);
+            background-color: #11100F;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // }  
+            &.inViewport {
+                animation: flip-horizontal-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            }      
+        }
+        &.cplus {
+            background-image: url(../../media/images/cplus.svg);
+            background-color: #D74654;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+            &.inViewport {
+                animation: scale-down-center 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              }     
+        }
+        &.java {
+            background-image: url(../../media/images/java.svg);
+            background-color: #000;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+            &.inViewport {
+                animation: rotate-scale-up 3.65s linear both;
+              }    
+        }
+        &.apple {
+            background-image: url(../../media/images/apple.svg);
+            background-color: #555555;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+              &.inViewport {
+                animation: shrink 3s ease-in-out;
+              }     
+        }
+        &.windows {
+            background-image: url(../../media/images/windows.svg);
+            background-color: #000;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // }
+              &.inViewport {
+                animation: grow 3s ease-in-out;
+              }      
+        }
+        &.linux {
+            background-image: url(../../media/images/linux.svg);
+            background-color: #fff;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+              &.inViewport {
+                animation:spin__right 3s ease-in-out;
+              }    
+        }
+        &.vs {
+            background-image: url(../../media/images/vs.svg);
+            background-color: #000;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+              &.inViewport {
+                animation: flip-scale-2-hor-top 5s linear both;
+              }     
+        }
+        &.sublime {
+            background-image: url(../../media/images/sublime.svg);
+            background-color: #4C4C4C;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+              &.inViewport {
+                animation: scale-up-center 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              }    
+        }
+        &.sql {
+            background-image: url(../../media/images/sql.svg);
+            background-color: #00758F;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+              &.inViewport {
+                animation:spin__left 3s ease-in-out;
+              }     
+        }
+        &.mysql {
+            background-image: url(../../media/images/mysql.svg);
+            background-color: #F29111;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // }  
+            &.inViewport {
+                animation: swing-top-fwd 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }    
+        }
+        &.postsql {
+            background-image: url(../../media/images/postsql.svg);
+            background-color: #336791;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+              &.inViewport {
+                animation: slide-top 8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              }    
+        }
+        &.mongo {
+            background-image: url(../../media/images/mongo.svg);
+            background-color: #E8E7D5;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+              &.inViewport {
+                animation: shadow-pop-tr 5.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+                &:hover {
+                    // @include box_shadow(5);
+                    opacity: 0.5;
+                }
+              }  
+        }
+        &.graphql {
+            background-image: url(../../media/images/graphql.svg);
+            background-color: #161e26;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // }  
+            &.inViewport {
+                animation: swirl-in-fwd 6s ease-out both;
+              }    
+        }
+        &.gatsby {
+            background-image: url(../../media/images/gatsby.svg);
+            background-color: #fff;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // }    
+            &.inViewport {
+                animation: flip-in-hor-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              }  
+        }
+        &.next {
+            background-image: url(../../media/images/next.svg);
+            background-color: #fff;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+            &.inViewport {
+                animation: scale-out-center 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; 
+            }    
+        }
+        &.svg {
+            background-image: url(../../media/images/svg.svg);
+            background-color: #303030; 
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // }
+            &.inViewport {
+                animation: rotate-out-2-cw 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+            }     
+        }
+        &.chrome {
+            background-image: url(../../media/images/chrome.svg);
+            background-color: #4285F4;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+            &.inViewport {
+                animation: swirl-out-bck 6s ease-in both;
+            }    
+        }
+        &.safari {
+            background-image: url(../../media/images/safari.svg);
+            background-color: #CC1111;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+            &.inViewport {
+                animation: flip-out-hor-top 4.45s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;    
+            }    
+        }
+        &.firefox {
+            background-image: url(../../media/images/firefox.svg);
+            background-color: #203FB6;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // }
+            &.inViewport {
+                animation: slit-out-vertical 5s ease-in both;
+            }     
+        }
+        &.nightly {
+            background-image: url(../../media/images/nightly.svg);
+            background-color: #F62336;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // }
+            &.inViewport {
+                animation: slide-out-top 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            }     
+        }
+        &.edge {
+            background-image: url(../../media/images/edge.svg);
+            background-color: #000;
+            // &.animate_when_top {
+            //     animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            // } 
+            &.inViewport {
+                animation: slide-out-bck-center 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            }    
+        }
+        &.adobe {
+            background-image: url(../../media/images/adobe.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: slide-out-blurred-top 5.45s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+            }     
+        }
+        &.xd {
+            background-image: url(../../media/images/xd.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: slide-out-elliptic-top-bck 4.7s ease-in both;
+            }     
+        }
+        &.ps {
+            background-image: url(../../media/images/ps.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: bounce-out-top 1.5s both; 
+            }     
+        }
+        &.ai {
+            background-image: url(../../media/images/ai.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: roll-out-left 4.6s ease-in both;
+            }     
+        }
+        &.cc {
+            background-image: url(../../media/images/cc.svg);
+            background-color: #fff; 
+            &.inViewport {
+                    animation: swing-out-top-bck 4.45s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+            }    
+        }
+        &.git {
+            background-image: url(../../media/images/git.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: fade-out 4s ease-out both;
+            }   
+        }
+        &.firebase {
+            background-image: url(../../media/images/firebase.svg);
+            background-color: #fff; 
+            &.inViewport {
+                animation: puff-out-center 5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+                
+            }    
+        }
+        &.ruby {
+            background-image: url(../../media/images/ruby.svg);
+            background-color: #fff;
+            &.inViewport {
+               animation: roll-out-blurred-left 6.65s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;    
+            }     
+        }
+        &.rails {
+            background-image: url(../../media/images/rails.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: flicker-out-1 5s linear both;
+            }     
+        }
+        &.cpanel {
+            background-image: url(../../media/images/cpanel.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: vibrate-1 5.3s linear both;
+            }     
+        }
+        &.fz {
+            background-image: url(../../media/images/fz.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: flicker-1 4s linear infinite both;
+            }     
+        }
+        &.netlify {
+            background-image: url(../../media/images/netlify.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: shake-horizontal 4.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            }     
+        }
+        &.bootstrap {
+            background-image: url(../../media/images/bootstrap.svg);
+            background-color: #fff; 
+            &.inViewport {
+                animation: jello-horizontal 4.9s both;
+            }    
+        }
+        &.material {
+            background-image: url(../../media/images/material.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: wobble-hor-bottom 4.8s both;
+            }     
+        }
+        &.azure {
+            background-image: url(../../media/images/azure.svg);
+            background-color: #fff; 
+            &.inViewport {
+                animation: bounce-top 4.9s both;
+            }    
+        }
+        &.yii {
+            background-image: url(../../media/images/yii.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: heartbeat 5.5s ease-in-out both;
+            }     
+        }
+        &.meteor {
+            background-image: url(../../media/images/meteor.svg);
+            background-color: #fff; 
+            &.inViewport {
+                animation: blink-2 4.9s both;
+            }    
+        }
+        &.express {
+            background-image: url(../../media/images/express.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.django {
+            background-image: url(../../media/images/django.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.laravel {
+            background-image: url(../../media/images/laravel.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: pulsate-fwd 5s ease-in-out infinite;    
+            }     
+        }
+        &.coffee {
+            background-image: url(../../media/images/coffee.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: bounce-left 5s both;
+            }     
+        }
+        &.go {
+            background-image: url(../../media/images/go.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.elixir {
+            background-image: url(../../media/images/elixir.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.scala {
+            background-image: url(../../media/images/scala.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: jello-diagonal-1 4.8s both;
+            }     
+        }
+        &.bulma {
+            background-image: url(../../media/images/bulma.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: scale-out-tr 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;    
+            }     
+        }
+        &.d3 {
+            background-image: url(../../media/images/d3.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: pulsate-bck 5s ease-in-out both;
+            }     
+        }
+        &.w3c {
+            background-image: url(../../media/images/w3c.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: bounce-right 4.8s both;
+            }     
+        }
+        &.json {
+            background-image: url(../../media/images/json.svg);
+            background-color: #fff; 
+            &.inViewport {
+                animation: vibrate-2 0.3s linear 15 both;
+            }    
+        }
+        &.objc {
+            background-image: url(../../media/images/objc.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: shake-lr 4.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            }     
+        }
+        &.swift {
+            background-image: url(../../media/images/swift.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.ionic {
+            background-image: url(../../media/images/ionic.svg);
+            background-color: #fff; 
+            &.inViewport {
+                
+            }    
+        }
+        &.zurb {
+            background-image: url(../../media/images/zurb.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.net {
+            background-image: url(../../media/images/net.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.ember {
+            background-image: url(../../media/images/ember.svg);
+            background-color: #fff; 
+            &.inViewport {
+                
+            }    
+        }
+        &.backbone {
+            background-image: url(../../media/images/backbone.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: scale-out-top 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            }     
+        }
+        &.materialize {
+            background-image: url(../../media/images/materialize.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: vibrate-3 0.5s linear 10 both;
+            }     
+        }
+        &.phonegap {
+            background-image: url(../../media/images/phonegap.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: flicker-5 8s linear 1 both;
+            }     
+        }
+        &.aurelia {
+            background-image: url(../../media/images/aurelia.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: wobble-ver-left 4.8s both;
+            }     
+        }
+        &.aspnet {
+            background-image: url(../../media/images/aspnet.svg);
+            background-color: #fff; 
+            &.inViewport {
+                animation: shake-vertical 4.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            }    
+        }
+        &.babylon {
+            background-image: url(../../media/images/babylon.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: jello-diagonal-2 4.8s both;
+            }     
+        }
+        &.mithril {
+            background-image: url(../../media/images/mithril.svg);
+            background-color: #fff; 
+            &.inViewport {
+                
+            }    
+        }
+        &.polymer {
+            background-image: url(../../media/images/polymer.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.oracle {
+            background-image: url(../../media/images/oracle.svg);
+            background-color: #fff; 
+            &.inViewport {
+                animation: ping 0.8s ease-in-out 6 both;
+            }    
+        }
+        &.redis {
+            background-image: url(../../media/images/redis.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.amazon {
+            background-image: url(../../media/images/amazon.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.google {
+            background-image: url(../../media/images/google.svg);
+            background-color: #fff;
+            &.inViewport {
+                &.inViewport {
+                    animation: wobble-hor-top 4.8s both;
+                }
+                
+            }     
+        }
+        &.stack {
+            background-image: url(../../media/images/stack.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.slack {
+            background-image: url(../../media/images/slack.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: flicker-4 4s linear 2 both;
+            }     
+        }
+        &.mdn {
+            background-image: url(../../media/images/mdn.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: shake-top 4.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            }     
+        }
+        &.xml {
+            background-image: url(../../media/images/xml.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: slide-in-blurred-top 6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            }      
+        }
+        &.medium {
+            background-image: url(../../media/images/medium.svg);
+            background-color: #000;
+            &.inViewport {
+                
+            }     
+        }
+        &.smashing {
+            background-image: url(../../media/images/smashing.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.udemy {
+            background-image: url(../../media/images/udemy.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.zepto {
+            background-image: url(../../media/images/zepto.png);
+            background-color: #fff;
+            &.inViewport {
+                animation: shake-tr 4.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            }     
+        }
+        &.apache {
+            background-image: url(../../media/images/apache.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.nginx {
+            background-image: url(../../media/images/nginx.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.jest {
             background-image: url(../../media/images/jest.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.symfony {
             background-image: url(../../media/images/symfony.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.cake {
             background-image: url(../../media/images/cake.svg);
-            background-color: rgb(211, 60, 68);     
+            background-color: rgb(211, 60, 68);
+            &.inViewport {
+                
+            }     
         }
         &.spring {
             background-image: url(../../media/images/spring.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.youtube {
             background-image: url(../../media/images/youtube.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.flutter {
             background-image: url(../../media/images/flutter.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                animation: wobble-ver-right 4.8s both;
+            }     
         }
         &.xamarin {
             background-image: url(../../media/images/xamarin.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.tailwind {
             background-image: url(../../media/images/tailwind.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.sketch {
             background-image: url(../../media/images/sketch.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.figma {
             background-image: url(../../media/images/figma.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                animation: jello-vertical 4.9s both;   
+            }     
         }
         &.flask {
             background-image: url(../../media/images/flask.svg);
-            background-color: #fff;     
+            background-color: #fff;  
+            &.inViewport {
+                animation: flicker-3 2.5s linear 3 both;
+            }   
         }
         &.semantic {
             background-image: url(../../media/images/semantic.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.svelte {
             background-image: url(../../media/images/svelte.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.postman {
             background-image: url(../../media/images/postman.svg);
-            background-color: #212529;     
+            background-color: #212529;
+            &.inViewport {
+                
+            }     
         }
         &.preact {
             background-image: url(../../media/images/preact.svg);
@@ -481,153 +913,632 @@ ul.flex__row {
         }
         &.perfecto {
             background-image: url(../../media/images/perfecto.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.mojo {
             background-image: url(../../media/images/mojo.png);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.kitura {
             background-image: url(../../media/images/kitura.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.vapor {
             background-image: url(../../media/images/vapor.png);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.blazor {
             background-image: url(../../media/images/blazor.png);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.popphp {
             background-image: url(../../media/images/popphp.png);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.padrino {
             background-image: url(../../media/images/padrino.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.codeigniter {
             background-image: url(../../media/images/codeigniter.png);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.play {
             background-image: url(../../media/images/play.svg);
-            background-color: rgb(146, 209, 61);;     
+            background-color: rgb(146, 209, 61);
+            &.inViewport {
+                
+            }     
         }
         &.sinatra {
             background-image: url(../../media/images/sinatra.png);
-            background-color: #fff;     
+            background-color: #fff; 
+            &.inViewport {
+                
+            }    
         }
         &.lando {
             background-image: url(../../media/images/lando.png);
-            background-color: #ed3f7a;     
+            background-color: #ed3f7a;
+            &.inViewport {
+                
+            }     
         }
         &.bit {
             background-image: url(../../media/images/bit.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.wix {
             background-image: url(../../media/images/wix.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.platform {
             background-image: url(../../media/images/platform.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.ez {
             background-image: url(../../media/images/ez.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
        
         &.acquia {
             background-image: url(../../media/images/acquia.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.strapi {
             background-image: url(../../media/images/strapi.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.docker {
             background-image: url(../../media/images/docker.svg);
-            background-color: #fff;     
+            background-color: #fff; 
+            &.inViewport {
+                animation: flicker-2 2s linear 3 both;
+            }
         }
         &.contenta {
             background-image: url(../../media/images/contenta.png);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                animation: shake-tl 4.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            }     
         }
         &.mobileangular {
             background-image: url(../../media/images/mobileangular.png);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.react_native {
             background-image: url(../../media/images/react_native.png);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.nativescript {
             background-image: url(../../media/images/nativescript.png);
-            background-color: rgb(61, 90, 254);     
+            background-color: rgb(61, 90, 254);
+            &.inViewport {
+                
+            }     
         }
         &.jquerymobile {
             background-image: url(../../media/images/jquerymobile.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.animejs {
             background-image: url(../../media/images/animejs.jpg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
         &.motionui {
             background-image: url(../../media/images/motionui.svg);
-            background-color: #fff;     
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
         }
-        // &. {
-        //     background-image: url(../../media/images/.svg);
-        //     background-color: #fff;     
-        // }
-        // &. {
-        //     background-image: url(../../media/images/.svg);
-        //     background-color: #fff;     
-        // }
-        // &. {
-        //     background-image: url(../../media/images/.svg);
-        //     background-color: #fff;     
-        // }
-        // &. {
-        //     background-image: url(../../media/images/.svg);
-        //     background-color: #fff;     
-        // }
-        // &. {
-        //     background-image: url(../../media/images/.svg);
-        //     background-color: #fff;     
-        // }
-        // &. {
-        //     background-image: url(../../media/images/.svg);
-        //     background-color: #fff;     
-        // }
-        // &. {
-        //     background-image: url(../../media/images/.svg);
-        //     background-color: #fff;     
-        // }
-        // &. {
-        //     background-image: url(../../media/images/.svg);
-        //     background-color: #fff;     
-        // }
-        // &. {
-        //     background-image: url(../../media/images/.svg);
-        //     background-color: #fff;     
-        // }
-        // &. {
-        //     background-image: url(../../media/images/.svg);
-        //     background-color: #fff;     
-        // }
-        // &. {
-        //     background-image: url(../../media/images/.svg);
-        //     background-color: #fff;     
-        // }
-        // &. {
-        //     background-image: url(../../media/images/.svg);
-        //     background-color: #fff;     
-        // }
+        &.csstricks {
+            background-image: url(../../media/images/csstricks.svg);
+            background-color: #000;
+            &.inViewport {
+                
+            }     
+        }
+        &.webpack {
+            background-image: url(../../media/images/webpack.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.gruntjs {
+            background-image: url(../../media/images/gruntjs.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.less {
+            background-image: url(../../media/images/less.svg);
+            background-color: #1d365d;
+            &.inViewport {
+                animation: shake-right 4.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            }     
+        }
+        &.handlebars {
+            background-image: url(../../media/images/handlebars.png);
+            background-color: #f0772b;
+            &.inViewport {
+                
+            }     
+        }
+        &.jade {
+            background-image: url(../../media/images/jade.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: shake-left 4.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            }     
+        }
+        &.jshint {
+            background-image: url(../../media/images/jshint.png);
+            background-color: #2E2E2D;
+            &.inViewport {
+                
+            }     
+        }
+        &.require {
+            background-image: url(../../media/images/require.png);
+            background-color: #f2f2f2;
+            &.inViewport {
+                
+            }     
+        }
+        &.stylus {
+            background-image: url(../../media/images/stylus.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.modernizr {
+            background-image: url(../../media/images/modernizr.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.brew {
+            background-image: url(../../media/images/brew.svg);
+            background-color: #fff; 
+            &.inViewport {
+                animation: slide-out-blurred-top 5.45s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+            }    
+        }
+        &.stencil {
+            background-image: url(../../media/images/stencil.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.algolia {
+            background-image: url(../../media/images/algolia.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.aos {
+            background-color:#4c55ae;  
+            font-family: Helvetica, Tahoma;
+            font-weight: 700;
+            a {
+                text-indent: 0; 
+                top: 40px;
+                left: 20px; 
+                color: rgba(0, 0, 0, 0.5); 
+            }
+            &.inViewport {
+                
+            }
+        }
+        &.bideo {
+            background-color:#4c55ae;  
+            font-family: 'proxima-nova-condensed', Helvetica;
+            font-weight: 700;
+            a {
+                text-indent: 0; 
+                top: 40px;
+                left: 13px; 
+                color: #fff; 
+            } 
+            &.inViewport {
+                
+            }   
+        }
+        &.chart {
+            background-image: url(../../media/images/chart.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.glimmer {
+            background-image: url(../../media/images/glimmer.png);
+            background-color: #000; 
+            &.inViewport {
+                
+            }    
+        }
+        &.cleave {
+            background-color: #fff;  
+            font-family: Helvetica, Tahoma, sans-serif;
+            font-weight: 700;
+            color: #000;
+            a {
+                text-indent: 0; 
+                top: 40px;
+                left: 10px;
+                font-size: 34px;
+            } 
+            &.inViewport {
+                
+            }    
+        }
+        &.choreographer {
+            background-color: #fff; 
+            font-family: Rubik, sans-serif;
+            font-weight: 700;
+            color: #000;
+            a {
+                text-indent: 0; 
+                top: 58px;
+                left: 0;
+                color: #000; 
+                font-size: 21px;
+            }
+            &.inViewport {
+                
+            }      
+        }
+        &.granim {
+            background-color: #9a349a; 
+            color: #9a349a;
+            background-image: url(../../media/images/granim.svg);
+            &.inViewport {
+                
+            }    
+        }
+        &.multiple {
+            background-color: #fff; 
+            font-family: Helvetica, Tahoma, sans-serif;
+            font-weight: 700;
+            a {
+                text-indent: 0; 
+                top: 40px;
+                left: -13px; 
+                color: #000;
+                font-size: 40px; 
+            }
+            &.inViewport {
+                
+            }    
+        }
+        &.omni {
+            background-image: url(https://omniscientjs.github.io/assets/omniscient.svg);
+            background-color: rgb(0, 152, 198);
+            &.inViewport {
+                
+            }     
+        }
+        &.parsley {
+            background-color: #fff; 
+            font-family: Helvetica, Tahoma, sans-serif;
+            font-weight: 700;
+            a {
+                text-indent: 0; 
+                top: 40px;
+                left: -4px; 
+                color: #000;
+                font-size: 40px; 
+            } 
+            &.inViewport {
+                
+            }    
+        }
+        &.popper {
+            background-image: url(../../media/images/popper.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.premonish {
+            // background-image: url(../../media/images/premonish.svg);
+            background-color: #fff; 
+            a {
+                text-indent: 0; 
+                top: 40px;
+                left: -24px; 
+                font-size: 34px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-family: 'Bungee', sans-serif;
+                color: #000;
+            }
+            &.inViewport {
+                
+            }    
+        }
+        &.slick {
+            background-color: #fff; 
+            a {
+                text-indent: 0; 
+                top: 21px;
+                left: 27px;
+                font-weight: 700;
+                font-family: 'pacifico', cursive;
+                color: #3498db;
+            } 
+            &.inViewport {
+                
+            }    
+        }
+        &.taffy {
+            background-image: url(../../media/images/taffy.png);
+            background-color: #fff; 
+            &.inViewport {
+                animation: shake-br 4.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            }    
+        }
+        &.tween {
+            background-image: url(../../media/images/tween.jpg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.three {
+            background-color: rgb(34,34,34); 
+            a {
+                text-indent: 0; 
+                top: 46px;
+                left: -3px;
+                font-family: "Roboto Mono", monospace;;
+                color: rgb(4, 158, 244);
+                font-weight: 500;
+                font-size: 34px;
+
+            }
+            &.inViewport {
+                
+            }   
+        }
+        &.voca {
+            background-image: url(../../media/images/voca.png);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.mocha {
+            background-image: url(../../media/images/mocha.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.babel {
+            background-image: url(../../media/images/babel.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.shave {
+            background-image: url(../../media/images/shave.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.eslint {
+            background-image: url(../../media/images/eslint.svg);
+            background-color: #fff;
+            &.inViewport {
+                animation: shake-bl 4.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            }     
+        }
+        &.webix {
+            background-image: url(../../media/images/webix.png);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.pure {
+            background-image: url(../../media/images/pure.png);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.uikit {
+            background-image: url(../../media/images/uikit.svg);
+            background-color: #1f84f0;
+            &.inViewport {
+                
+            }     
+        }
+        &.milligram {
+            background-image: url(../../media/images/milligram.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.tent {
+            background-image: url(../../media/images/tent.svg);
+            background-color: #222;
+            &.inViewport {
+                
+            }     
+        }
+        &.susy {
+            background-image: url(../../media/images/susy.png);
+            background-color: rgb(241,247,255);
+            &.inViewport {
+                animation: slide-out-blurred-top 5.45s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+            }     
+        }
+        &.base {
+            background-image: url(../../media/images/base.svg);
+            background-color: rgb(255, 204, 0);
+            &.inViewport {
+                
+            }     
+        }
+        &.spectre {
+            background-image: url(../../media/images/spectre.svg);
+            background-color: #fff;
+            &.inViewport {
+                
+            }     
+        }
+        &.picnic {
+            background-color:rgb(185, 219, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            a {
+                text-indent: 0; 
+                top: 40px;
+                left: -16px; 
+                color: #000;
+                font-size: 40px; 
+            } 
+            &.inViewport {
+                
+            }   
+        }
+        &.skeleton {
+            background-color: #fff;  
+            font-family: Raleway, HelveticaNeue, sans-serif;
+            font-weight: 700;
+            a {
+                text-indent: 0; 
+                top: 40px;
+                left: -16px; 
+                color: #000;
+                font-size: 40px; 
+            }
+            &.inViewport {
+                animation: shake-bottom 4.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            }   
+        }
+        &.animatecss {
+            background-color: #fff;  
+            font-family: Roboto, Verdana, sans-serif;
+            font-weight: 700;
+            a {
+                text-indent: 0; 
+                top: 40px;
+                left: -16px; 
+                color:#f35626;
+                font-size: 40px; 
+            }
+            &.inViewport {
+                
+            }   
+        }
+        &.paper {
+            background-color: #fff;
+            font-family: 'Patrick Hand', cursive;
+            font-weight: 400;
+            a {
+                text-indent: 0; 
+                top: 40px;
+                left: 13px; 
+                color:#000;
+                font-size: 40px; 
+            }
+            &.inViewport {
+                
+            }     
+        }
+        &.nes {
+            background-color: #fff;
+            font-family: 'Press Start 2P', cursive;
+            font-weight: 400;
+            a {
+                text-indent: 0; 
+                top: 40px;
+                left: -31px;
+                color: #000;
+                font-size: 34px;
+            }
+            &.inViewport {
+                
+            } 
+            
+        }
+        &.simple {
+            background-image: url(../../media/images/simple.svg);
+            background-color: #000;
+            &.inViewport {
+                
+            }     
+        }
+        
         
     }
 }

@@ -1,0 +1,38 @@
+article {
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    section.parent { 
+        margin: 21px 21px 42px 21px;
+        p {
+            text-align: center;
+            margin-top: 13%;
+            margin-bottom: -5%;
+        }
+        div.child {
+            margin: 10%;
+            padding: 10%;
+            border: 1px solid #78C0A8;
+            ul {
+                position: relative;
+                top: -55px;
+                li {
+                    position: relative;
+                    margin-bottom: 34px;
+                    span {
+                        position: absolute;
+                        font-size: 34px;
+                    }
+                    p {
+                        padding-left: 60px;
+                        line-height: 1.5;
+                        padding-left: 55px;
+                        padding-top: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

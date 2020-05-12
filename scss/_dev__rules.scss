@@ -62,20 +62,7 @@ article.dev__rules {
                 
                 }  
             }
-            &.cascading__indents {
-                p {
-                    &.third, &.fourth {
-                        span.second {
-                            left: 406px;
-                        }
-                    }
-
-                }
-                span {
-                        
-                    font-size: 1em;
-                }
-            }
+            
             ul {
                 position: relative;
                 top: -55px;

@@ -11,7 +11,7 @@ nav.types__list {
   // }
   label {
     display:block;
-    height: 133px;
+    height: 180px;
     user-select:none;
     text-align: right;
     background: darken(teal, 13%);
@@ -84,6 +84,9 @@ nav.types__list {
           border-bottom-left-radius: 8px;
           border-top-right-radius: 8px;
           border-bottom-right-radius: 8px;
+        }
+        a {
+          z-index: 1;
         }
       } 
     }

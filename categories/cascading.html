@@ -35,7 +35,7 @@
             <h2>CSS3</h2>
             <p>CSS3 is used to style the layout of a webpage.</p>
         </article>
-        <article class='dev__rules'>
+        <article class='categories'>
             <section class="parent">
                 <blockquote>CSS specifies the style of a webpage — page layouts, colors, and fonts are all determined with CSS.<span><a href="https://skillcrush.com/blog/css/">Scott Morris</a>
                 </span></blockquote>
@@ -51,7 +51,7 @@
                         </li>
                         <li>
                             <span>3.</span>
-                            <p>Inside the selections curly braces a declaration is made with properties and values</p>
+                            <p>Inside the selectors curly braces a declaration is made with properties and values</p>
                         </li>
                         <li>
                             <span>4.</span>
@@ -74,29 +74,57 @@
                             </p>
                         </li>
                         <li><span>3.</span>
-                            <p class="third">
+                            <p class="indents">
                                 <code>body {<br>
-                                    <span class="first">background-color: blue;</span>
-                                    <br><span class="second">}</span>
+                                    <span class="indent">background-color: blue;</span>
+                                    <br><span class="indent">}</span>
                                 </code>
                             </p>
                         </li>
                         <li>
                             <span>4.</span>
-                            <p class="fourth">
+                            <p class="indents">
                                 <code>body {<br>
                                     <span>background-color: blue;</span><br>
                                     <span>border-size: 5px;</span><br>
                                     <span>border-style: solid;</span><br> 
                                     <span>border-color: red;</span><br>
-                                    <span class="second">}</span>
+                                    <span class="indent">}</span>
                                 </code>
                             </p>
                         </li>
                     </ul>
                 </div>
             </section>
-        </article>       
+        </article> 
+        <article class='dev__rules'>
+            <section class="parent padding__width">
+                <blockquote>The margin and padding of a child element in percentage is the percentage of the width of its parent element.<span>Aayush Arora
+                </span></blockquote>
+                <div class="child padding__width">
+                    <ul>
+                        <li><span>1.</span><p>Parent width = 250px</p></li>
+                        <li><span>2.</span><p>Child padding = 10%</p></li>
+                        <li><span>3.</span><p>padding of child = x% * (width of parent)</p></li>
+                        <li><span>4.</span><p>padding of child = 10% * 250px</p></li>
+                        <li><span>5.</span><p>25px</p></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="parent percentage__height">
+                <blockquote>The height of a child element in percentage is calculated by the height of the parent element.<span>Aayush Arora
+                </span></blockquote>
+                <div class="child percentage__height">
+                    <ul>
+                        <li><span>1.</span><p>Parent height = 250px</p></li>
+                        <li><span>2.</span><p>Child height = 10%</p></li>
+                        <li><span>3.</span><p>Height of child = x% * ( height of the parent element )</p></li>
+                        <li><span>4.</span><p>Height of child = 10% * (250px)</p></li>
+                        <li><span>5.</span><p>25px</p></li>
+                    </ul>
+                </div>
+            </section>
+        </article>      
     </main>
     <script src='../js/navbar.js'></script>
     <script src='../js/ripple.js'></script>
